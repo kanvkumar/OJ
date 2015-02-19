@@ -1,0 +1,183 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+	<style>
+         title
+	 {
+           text-align:center;
+	 }
+          body 
+	 {
+        margin: 0px;
+        padding: 0px;
+        background: crimson;
+      }
+      #container {
+        background-color: #FF9966;
+
+      }
+      ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a:link, a:visited {
+    display: block;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #98bf21;
+    width: 150px;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover, a:active {
+    background-color: #7A991A;
+}
+       </style>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Code Viral Online Judge</title>
+
+	</head>
+	<body>
+		<div id="container"></div>
+        <script src="http://d3lp1msu2r81bx.cloudfront.net/kjs/js/lib/kinetic-v4.7.4.min.js"></script>
+        <script defer="defer">
+        var sw = 578;
+        var sh = 400;
+        var stage = new Kinetic.Stage({
+        container: 'container',
+        width: 578,
+        height: 400
+      });
+      var layer = new Kinetic.Layer({
+        y: -30 
+      });
+
+      var leftEye = new Kinetic.Blob({
+        x: 150,
+        points: [0, 200, 50, 190, 100, 200, 50, 210],
+        tension: 0.5,
+        stroke: 'white',
+        strokeWidth: 10     
+      });
+      
+      var rightEye = new Kinetic.Blob({
+        x: sw - 250,
+        points: [0, 200, 50, 190, 100, 200, 50, 210],
+        tension: 0.5,
+        stroke: 'white',
+        strokeWidth: 10     
+      });
+      
+      var nose = new Kinetic.Spline({
+        points: [240, 280, sw/2, 300, sw-240,280],
+        tension: 0.5,
+        stroke: 'white',
+        strokeWidth: 10
+      });
+      
+      var mouth = new Kinetic.Blob({
+        points: [150, 340, sw/2, 380, sw - 150, 340, sw/2, sh],
+        tension: 0.5,
+        stroke: 'red',
+        strokeWidth: 10
+      });
+
+      layer.add(leftEye)
+           .add(rightEye)
+           .add(nose)
+           .add(mouth);
+
+      stage.add(layer);
+      
+      // tweens
+      
+      var leftEyeTween = new Kinetic.Tween({
+        node: leftEye,
+        duration: 1,
+        easing: Kinetic.Easings.ElasticEaseOut,
+        y: -100,
+        points: [0, 200, 50, 150, 100, 200, 50, 200]
+      }); 
+      
+      var rightEyeTween = new Kinetic.Tween({
+        node: rightEye,
+        duration: 1,
+        easing: Kinetic.Easings.ElasticEaseOut,
+        y: -100,
+        points: [0, 200, 50, 150, 100, 200, 50, 200]
+      });
+      
+      var noseTween = new Kinetic.Tween({
+        node: nose,
+        duration: 1,
+        easing: Kinetic.Easings.ElasticEaseOut,
+        y: -100,
+        points: [220, 280, sw/2, 200, sw-220,280]
+      }); 
+         
+      var mouthTween = new Kinetic.Tween({
+        node: mouth,
+        duration: 1,
+        easing: Kinetic.Easings.ElasticEaseOut,
+        points: [100, 250, sw/2, 250, sw - 100, 250, sw/2, sh-20]
+      }); 
+
+        var open = false;
+        
+        setInterval(function () {
+            if (open) {
+        leftEyeTween.reverse();
+        rightEyeTween.reverse();
+        noseTween.reverse();
+        mouthTween.reverse();
+        open = false;
+            } else {
+        leftEyeTween.play();
+        rightEyeTween.play();
+        noseTween.play();
+        mouthTween.play();
+        open = true;
+            }
+        }, 500)
+
+   
+
+    </script>
+    	<div id="container">
+			<div id="header">
+				<h1><center>Code Viral Online Judge</h1></center><br clear="both"/>
+			</div>
+						<div id="mainbody">
+				<div id="hmenu">
+					<ul>
+						<li><a href="Announcements.html">Announcements</a></li>
+						<li><a href="Register.html">register</a></li>
+						<li><a href="userlist.html">User List</a></li>
+						<li><a href="problems.html">problems</a></li>
+						<li><a href="submit.html">submit</a></li>
+						<li><a href="status">status</a></li>
+						<li><a href="About.html">About</a></li>
+					</ul><br clear="all"/>
+				</div>
+
+				<b>We are Btech 2nd-Year Students who love competitive coding.</b>
+			<font color="WHITE"><marquee direction="left" style="background:crimson">Our handles on Codechef <a href="http://www.codechef.com/users/its_pheonix">Its_pheonix.</a> And <a href ="http://www.codechef.com/users/codemaster1994">Codemaster</a></marquee></font>
+
+			<div id="content">
+				<h1><center>Credits</h1> </center><br />
+				<p><center>Developed by: <b>Krit Karan Singh & Kanv Kumar</b> </center><br /></p>
+				<p><center>Contact us: <b>kritkaran.b13@iiits.in , kanv.k13@iiits.in</b></center><br /></p>
+			</div>
+			<div id="footer">
+				<h5><center>&copy Krit&Kanv </center></h5>
+			<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fhttps://www.facebook.com/kritkaran.singh&amp;layout=box_count&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp" style="overflow:hidden;width:100%;height:80px;" scrolling="no" frameborder="0" allowTransparency="true"><a href="http://www.trivoo.net" class="fbook">www.trivoo.net</a></iframe>	</div>
+		</div>
+
+
+			</body>
+</html>

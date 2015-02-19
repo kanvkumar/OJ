@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+	<style>
+         title
+	 {
+           text-align:center;
+	 }
+          body 
+	 {
+        margin: 0px;
+        padding: 0px;
+        background: crimson;
+      }
+      #container {
+        background-color: #FF9966;
+
+      }
+      ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a:link, a:visited {
+    display: block;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #98bf21;
+    width: 150px;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover, a:active {
+    background-color: #7A991A;
+}
+       </style>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Code Viral Online Judge</title>
+
+	</head>
+	<body>
+	<div id="container">
+			<div id="header">
+				<h1><center>Code Viral Online Judge</h1></center><br clear="both"/>
+			</div>
+						<div id="mainbody">
+				<div id="hmenu">
+					<ul>
+						<li><a href="Announcements.html">Announcements</a></li>
+						<li><a href="Register.html">register</a></li>
+						<li><a href="userlist.html">User List</a></li>
+						<li><a href="problems">problems</a></li>
+						<li><a href="submit.html">submit</a></li>
+						<li><a href="status.htm">status</a></li>
+						<li><a href="About.html">About</a></li>
+					</ul><br clear="all"/>
+				</div>
+			<div id="content">
+                        					<h1>Please fill in following details :</h1><div id="msg"></div>
+					<form name="account" method="post" action="check.py" onSubmit="return validateReg()">
+					<table class="info">
+						<tr>
+							<td>Roll Number</td>
+							<td><input type="text" name="username"/></td>
+						</tr>
+						<tr>
+							<td>Password</td>
+							<td><input type="password" name="passwd"/></td>
+						</tr>
+						<tr>
+							<td>Confirm Password</td>
+							<td><input type="password" name="passwd2"/></td>
+						</tr>
+						<tr>
+							<td>Name</td>
+							<td><input type="text" name="name"/></td>
+						</tr>
+						<tr>
+							<td>Email ID</td>
+							<td><input type="text" name="email"/></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>
+								<input type="submit" value="Submit"/>
+								<input type="reset" value="Clear" />
+							</td>
+						<tr/>
+					</table>
+					</form>
+				</div>
+			</div>
+			<div id="footer">
+			<h5><center>&copy Krit&Kanv </center></h5>
+
+			</div>
+		</div>
+	</body>
+</html>

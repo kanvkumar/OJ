@@ -1,0 +1,10 @@
+6
+7 8 45 1 23 10
+7
+insert 5
+insert 66
+delete
+insert 42
+insert 5
+delete
+delete

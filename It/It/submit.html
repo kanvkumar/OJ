@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+	<style>
+         title
+	 {
+           text-align:center;
+	 }
+          body 
+	 {
+        margin: 0px;
+        padding: 0px;
+        background: crimson;
+      }
+      #container {
+        background-color: #FF9966;
+
+      }
+      ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a:link, a:visited {
+    display: block;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #98bf21;
+    width: 150px;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover, a:active {
+    background-color: #7A991A;
+}
+       </style>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Code Viral Online Judge</title>
+
+	</head>
+	<body>
+	<div id="container">
+			<div id="header">
+				<h1><center>Code Viral Online Judge</h1></center><br clear="both"/>
+			</div>
+						<div id="mainbody">
+				<div id="hmenu">
+					<ul>
+						<li><a href="Announcements.html">Announcements</a></li>
+						<li><a href="Register.html">register</a></li>
+						<li><a href="userlist.html">User List</a></li>
+						<li><a href="problems">problems</a></li>
+						<li><a href="submit.html">submit</a></li>
+						<li><a href="status.html">status</a></li>
+						<li><a href="About.html">About</a></li>
+					</ul><br clear="all"/>
+				</div>
+			<div id="content">
+				
+<div id="content">
+					<h1>Coder Login Details  :</h1><div id="msg"></div>
+					<form name="submission" method="post" action="submission.py" enctype="multipart/form-data" onSubmit="return validateSubmit()">
+					<table class="info">
+						<tr>
+							<td>Coder Handle:</td>
+							<td><input type="text" name="username"/></td>
+						</tr>
+						<tr>
+							<td>Coder Name:</td>
+							<td><input type="text" name="username"/></td>
+						</tr>
+
+						<tr>
+							<td>Password:</td>
+							<td><input type="password" name="passwd"/></td>
+						</tr>
+						<tr>
+							<td>Problem No:</td>
+							<td><select name="pid">%s</select></td>
+						</tr>
+						<tr>
+							<td>Programming Language:</td>
+							<td><select name="lang">%s</select></td>
+						</tr>
+						<tr>
+							<td>File:</td>
+							<input type="hidden" name="MAX_FILE_SIZE" value="500" />
+							<td><input type="file" name="upload"></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>
+								<input type="submit" value="Submit"/>
+								<input type="reset" value="Clear" />
+							</td>
+						<tr/>
+					</table>
+					</form>
+				</div>
+			</div>
+			<div id="footer">
+				<h5><center>&copy Krit&Kanv </center></h5>
+
+			</div>
+		</div>
+	</body>
+</html>
